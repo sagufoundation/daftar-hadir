@@ -9,6 +9,7 @@
 
 .btn--kopernik {
   background: #ff9800;
+
 }
 
 .btn--kopernik:hover {
@@ -218,7 +219,7 @@ h6 {
   padding: 0 25px;
   cursor: pointer;
   font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  color: #fff;
+  color: black;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -467,6 +468,12 @@ input {
   padding-top: 210px;
   box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.15);
 }
+
+@media screen and (max-width: 700px) { 
+
+  .card-1 .card-heading { display: none; }  
+  
+  }
 
 .card-1 .card-body {
   padding: 0 90px;
