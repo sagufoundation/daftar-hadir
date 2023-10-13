@@ -4,7 +4,7 @@
 }
 
 .bg-kopernik {
-  background: hsl(37, 92%, 76%);
+  background:  #ff9800;
 }
 
 .btn--kopernik {
@@ -13,6 +13,9 @@
 
 .btn--kopernik:hover {
   background: #945a04;
+}
+.text-center{
+  text-align: center;
 }
 
 
@@ -466,11 +469,7 @@ input {
   box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 700px) { 
 
-  .card-1 .card-heading { display: none; }  
-  
-  }
 
 .card-1 .card-body {
   padding: 0 90px;
