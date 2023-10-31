@@ -5,12 +5,12 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Absen KOPERNIK">
-    <meta name="author" content="Absen KOPERNIK">
-    <meta name="keywords" content="Absen KOPERNIK">
+    <meta name="description" content="Daftar Hadir KOPERNIK">
+    <meta name="author" content="Daftar Hadir KOPERNIK">
+    <meta name="keywords" content="Daftar Hadir KOPERNIK">
 
     <!-- Title Page-->
-    <title>Absen KOPERNIK</title>
+    <title>Daftar Hadir KOPERNIK</title>
 
        
     <!-- Icons font CSS-->
@@ -39,7 +39,7 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <div class="text-center">
-                        <h2 class="title fw-bolder spasi-1">ABSEN </h2>
+                        <h2 class="title fw-bolder spasi-1">DAFTAR HADIR </h2>
                     </div>
                         <div class="input-group">
                             <input class="input--style-1" type="text" id="nama" placeholder="Masukan Nama Lengkap" name="nama">
@@ -87,7 +87,7 @@
                             </div>
                         </div> -->
                         <div class="p-t-20">
-                            <button class="btn btn--radius btn--kopernik" type="button" onclick="sukses()" >ABSEN</button>
+                            <button class="btn btn--radius btn--kopernik" type="button" onclick="sukses()" >SUBMIT</button>
                         </div>
                 </div>
             </div>
@@ -109,9 +109,6 @@
                     let nama = $("#nama").val();
                     let group  = $("#group ").val();
                     let laptop = $("#laptop").val();
-                   console.log(nama);
-                   console.log(group);
-                   console.log(laptop);
                 if (nama && group  && laptop ) {
                 var script_url = "https://script.google.com/macros/s/AKfycbwQgbgPWh3wYvLIggLsAaavw6fpkhFgXLrZ-VR4XSSE7vKTHsEd4u24KuN435yYE4Xm/exec";
                 let url = script_url + "?callback=ctrlq&nama=" + nama + "&group=" + group  + "&laptop="+laptop+"&action=insert";
