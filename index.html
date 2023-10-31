@@ -46,8 +46,8 @@
                         </div>
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class" id="kelas">
-                                    <option disabled="disabled" selected="selected">Pilih Kelas</option>
+                                <select name="class" id="group">
+                                    <option disabled="disabled" selected="selected">Grup</option>
                                     <option value="A">A</option>
                                     <option value="B">B</option>
                                 </select>
@@ -57,10 +57,24 @@
                         
                         <div class="input-group">
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="class" id="status">
-                                    <option disabled="disabled" selected="selected">Status</option>
-                                    <option value="Masuk">Masuk</option>
-                                    <option value="Sakit">Sakit</option>
+                                <select name="class" id="laptop">
+                                    <option disabled="disabled" selected="selected">Laptop yang digunakan </option>
+                                    <option value="Menggunakan laptop milik sendiri">Menggunakan laptop milik sendiri</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
@@ -93,15 +107,15 @@
     <script>
         function sukses() {
                     let nama = $("#nama").val();
-                    let kelas = $("#kelas").val();
-                    let status = $("#status").val();
+                    let group  = $("#group ").val();
+                    let laptop = $("#laptop").val();
                    console.log(nama);
-                if (nama && kelas && status ) {
-                var script_url = "https://script.google.com/macros/s/AKfycby5PU0RToALZynw7JJghl88sgwlskuHHkA809vZ3Zra5qwgSUYdS1p4epTCZ2w30xus/exec";
-                let url = script_url + "?callback=ctrlq&nama=" + nama + "&kelas=" + kelas + "&status="+status+"&action=insert";
+                   console.log(group);
+                   console.log(laptop);
+                if (nama && group  && laptop ) {
+                var script_url = "https://script.google.com/macros/s/AKfycbwQgbgPWh3wYvLIggLsAaavw6fpkhFgXLrZ-VR4XSSE7vKTHsEd4u24KuN435yYE4Xm/exec";
+                let url = script_url + "?callback=ctrlq&nama=" + nama + "&group=" + group  + "&laptop="+laptop+"&action=insert";
                     $("input[type='text']").val("");
-
-                  
                     var request = jQuery.ajax({
                         crossDomain: true,
                         url: url,
